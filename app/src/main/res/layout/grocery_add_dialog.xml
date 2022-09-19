@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:backgroundTint="#FEFBF6"
+    android:background="@drawable/btn_bg"
+    app:cardCornerRadius="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Item To List"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:id="@+id/idtvHeading"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idtvHeading"
+            android:orientation="vertical">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditTextTheme"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+
+                app:hintTextColor="@color/black"
+                app:counterTextColor="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtitemname"
+                    android:textSize="14sp"
+                    android:hint="Enter item Name"
+                    android:inputType="text"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditTextTheme"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+
+                app:hintTextColor="@color/black"
+                app:counterTextColor="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtitemquantity"
+                    android:textSize="14sp"
+                    android:hint="Enter item Quantity in kg"
+                    android:inputType="numberDecimal"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextInputEditTextTheme"
+                android:layout_margin="10dp"
+                android:padding="5dp"
+
+                app:hintTextColor="@color/black"
+                app:counterTextColor="@color/black">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/idEdtitemprice"
+                    android:textSize="14sp"
+                    android:hint="Enter item Price /kg"
+                    android:inputType="numberDecimal"
+                    app:hintTextColor="@color/black"
+                    app:counterTextColor="@color/black"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_margin="5dp"
+                android:weightSum="2">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:id="@+id/idbtncancel"
+                    android:text="Cancel"
+                    android:background="@drawable/btn_bg"
+                    android:textAllCaps="false"
+                    />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_margin="8dp"
+                    android:padding="5dp"
+                    android:id="@+id/idbtnadd"
+                    android:text="Add"
+                    android:background="@drawable/btn_bg"
+                    android:textAllCaps="false"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
